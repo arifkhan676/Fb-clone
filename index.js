@@ -1,5 +1,6 @@
+const textIn=document.getElementById("textInp");
 
-const takeArea=document.getElementById("textArea");
+console.log(textIn);
 
 const bt=document.getElementById("btPost");
 
@@ -9,9 +10,8 @@ const secId = document.getElementById("spId");
 
 bt.addEventListener('click',() => {
 
-   pid.textContent=takeArea.value;
+   pid.textContent=textIn.value;
    secId.innerHTML=new Date();
 
-})
-document.getElementById("root").appendChild(pid);
+});
 document.getElementById("root").appendChild(secId);
