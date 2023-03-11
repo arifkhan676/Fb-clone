@@ -1,0 +1,45 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+h5{
+    color: aliceblue;
+}
+.rb{
+    background-color: #202124;
+}
+.container-fluid{
+    display: flex;
+}
+.row-1{
+    width: 31%;
+}
+.row-2{
+    width: 38%;
+}
+.row-3{
+    width: 31%;
+}
+.navbar-brand{
+    color: #fff;
+
+}
+.form-control{
+    width: 25px;
+    display: inline;
+}
+.form-inline{
+    display: flex;
+}
+.div1{
+    margin-top: 20px;
+    border-bottom: 1px solid gray;
+    width: 50%;
+}
+#pId{
+    color: #fff;
+}
+#spId{
+    color: #fff;
+}
