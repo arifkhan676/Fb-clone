@@ -3,8 +3,27 @@ body{
     margin: 0px;
 }
 
+
+.navbar{
+    background-color: #242526;
+}
+.navbar-brand{
+    color: #fff;
+    margin-left: 10px;
+}
+.navbar-brand:hover{
+    color:#fff;
+}
+h1{
+    color:#fff;
+}
+
+h2{
+    font-family: 'Days One', sans-serif;
+}
 h5{
     color: aliceblue;
+
 }
 .rb{
     background-color: #202124;
@@ -21,13 +40,24 @@ h5{
 .row-3{
     width: 31%;
 }
-.navbar-brand{
-    color: #fff;
+
+.head-search{
+    padding: 5% 120% 5% 5%;
+    width: auto;
+    border-radius: 35px;
+    margin-left: 150%;
+    background-color: transparent;
+    color: darkgrey;
+    border-color: hsla(0, 0%, 88%, 0.39);
 
 }
-.form-control{
-    width: 25px;
-    display: inline;
+.head-search-2{
+    padding: 2% 20% 2% 5%;
+    width: auto;
+    border-radius: 30px;
+    background-color: transparent;
+    color: darkgrey;
+    border-color: hsla(0, 0%, 88%, 0.39);
 }
 .form-inline{
     display: flex;
@@ -42,4 +72,21 @@ h5{
 }
 #spId{
     color: #fff;
+}
+.fa-house{
+    color: #fff;
+    margin-right: 15px;
+}
+.fa-facebook-messenger{
+    color: #fff;
+}
+.nnn{
+    margin-left: 50%;
+}
+.equal{
+    display: flex;
+}
+
+a {
+    text-decoration: none;
 }

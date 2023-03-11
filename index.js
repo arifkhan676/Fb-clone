@@ -13,5 +13,6 @@ bt.addEventListener('click',() => {
    pid.textContent=textIn.value;
    secId.innerHTML=new Date();
 
-});
+})
+document.getElementById("root").appendChild(pid);
 document.getElementById("root").appendChild(secId);
