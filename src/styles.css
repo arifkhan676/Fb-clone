@@ -2,8 +2,6 @@ body{
     padding: 0px;
     margin: 0px;
 }
-
-
 .navbar{
     background-color: #242526;
 }
@@ -25,8 +23,23 @@ h5{
     color: aliceblue;
 
 }
+
 .rb{
     background-color: #202124;
+}
+.myImg{
+    width: 27px;
+    border-radius: 50%;
+    margin-right: 7px; 
+}
+
+.myImg1{
+    width: 27px;
+    border-radius: 50%;
+    margin-left: 70%;
+}
+.marg{
+    margin-left: 80%;
 }
 .container-fluid{
     display: flex;
@@ -63,9 +76,10 @@ h5{
     display: flex;
 }
 .div1{
-    margin-top: 20px;
+    margin-top: 10px;
     border-bottom: 1px solid gray;
     width: 50%;
+    padding-bottom: 20px;
 }
 #pId{
     color: #fff;
@@ -76,17 +90,29 @@ h5{
 .fa-house{
     color: #fff;
     margin-right: 15px;
+    margin-top: 4px;
 }
 .fa-facebook-messenger{
     color: #fff;
 }
 .nnn{
-    margin-left: 50%;
+    text-align: left;
+    display: flex;
 }
 .equal{
     display: flex;
 }
-
-a {
-    text-decoration: none;
+.fa-user-group{
+    color:darkmagenta;
+    margin-right: 15px;
+    margin-top: 4px;
+}
+.fa-floppy-disk{
+    color: #fff;
+    margin-right: 15px;
+    margin-top: 4px;
+}
+.fa-bell{
+    color: #fff;
+    padding-left: 30px;
 }
