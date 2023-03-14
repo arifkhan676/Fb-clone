@@ -12,6 +12,9 @@ body{
 .navbar-brand:hover{
     color:#fff;
 }
+p{
+    color: #fff;
+}
 h1{
     color:#fff;
 }
@@ -25,18 +28,52 @@ h5{
 }
 
 .rb{
-    background-color: #202124;
+    background-color: #1c1e21;
 }
 .myImg{
-    width: 27px;
+    width: 35px;
     border-radius: 50%;
-    margin-right: 7px; 
 }
 
 .myImg1{
     width: 27px;
     border-radius: 50%;
-    margin-left: 70%;
+}
+
+.postDiv1{
+    background-color: #2a2b2cd0;
+    padding-top: 10px;
+    border-radius: 15px;
+}
+
+#newPost2{
+    background-color: #2a2b2cd0;
+    margin-top: 50px;
+    border-radius: 15px;
+    position: relative;
+}
+#pId{
+    margin-left: 3%;
+}
+#spId{
+    margin-left: 3%;
+}
+.postBorder1{
+    border-bottom: 1px solid gray;
+    padding-bottom: 10px;
+    width: 95%;
+    margin-left: 15px;
+
+}
+.postBorder2{
+    display: flex;
+    gap: 70px;
+    padding-top: 10px;
+    margin-left: 15px;
+}
+.flexPost2{
+    display: flex;
+    gap: 5px;
 }
 .marg{
     margin-left: 80%;
@@ -55,17 +92,16 @@ h5{
 }
 
 .head-search{
-    padding: 5% 120% 5% 5%;
-    width: auto;
+    padding: 10px 130px 10px 10px;
     border-radius: 35px;
-    margin-left: 150%;
     background-color: transparent;
     color: darkgrey;
     border-color: hsla(0, 0%, 88%, 0.39);
-
+    margin-left: 20%;
 }
+
 .head-search-2{
-    padding: 2% 20% 2% 5%;
+    padding: 2% 40% 2% 5%;
     width: auto;
     border-radius: 30px;
     background-color: transparent;
@@ -76,24 +112,11 @@ h5{
     display: flex;
 }
 .div1{
+    position: relative;
     margin-top: 10px;
     border-bottom: 1px solid gray;
     width: 50%;
     padding-bottom: 20px;
-}
-#pId{
-    color: #fff;
-}
-#spId{
-    color: #fff;
-}
-.fa-house{
-    color: #fff;
-    margin-right: 15px;
-    margin-top: 4px;
-}
-.fa-facebook-messenger{
-    color: #fff;
 }
 .nnn{
     text-align: left;
@@ -101,18 +124,51 @@ h5{
 }
 .equal{
     display: flex;
+    gap: 10px;
 }
+
+.fa-house{
+    color: #fff;
+    padding: 5px;
+
+}
+.fa-facebook-messenger{
+    color: #fff;
+    padding: 10px;
+}
+
 .fa-user-group{
     color:darkmagenta;
-    margin-right: 15px;
-    margin-top: 4px;
+    padding: 5px;
 }
 .fa-floppy-disk{
     color: #fff;
-    margin-right: 15px;
-    margin-top: 4px;
+    padding: 5px;
+
 }
 .fa-bell{
     color: #fff;
-    padding-left: 30px;
+    padding: 10px;
 }
+.fa-video{
+    color: #cb2a2a;
+}
+.fa-image{
+    color: rgb(50, 255, 50);
+}
+.fa-face-smile{
+    color:gold ;
+}
+/* Js Part */
+
+
+#pId{
+    color: #fff;
+}
+#spId{
+    color: #fff;
+}
+
+
+/* Js Part */
+
