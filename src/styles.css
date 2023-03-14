@@ -46,16 +46,16 @@ h5{
     border-radius: 15px;
 }
 
-#newPost2{
+.newPost2{
     background-color: #2a2b2cd0;
     margin-top: 50px;
     border-radius: 15px;
     position: relative;
 }
-#pId{
+.pId{
     margin-left: 3%;
 }
-#spId{
+.dateId{
     margin-left: 3%;
 }
 .postBorder1{

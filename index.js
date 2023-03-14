@@ -2,26 +2,41 @@ const textIn=document.getElementById("textInp");
 
 const bt=document.getElementById("btPost");
 
-const pid=document.getElementById("pId");
 
-const secId = document.getElementById("spId");
 
 bt.addEventListener('click',() => {
 
-   pid.textContent=textIn.value;
-   secId.innerHTML=new Date().toLocaleTimeString();
+   
+   const x = document.createElement('div');
+   x.classList.add("newPost2");
+   
+   const pid=document.createElement('p');
+   const dateid=document.createElement('p');
 
+   pid.classList.add("pId");
+   dateid.classList.add("dateId");
+
+   pid.textContent=textIn.value;
+   dateid.innerHTML=new Date().toLocaleTimeString();
+
+   x.appendChild(pid);
+   x.appendChild(dateid);
+
+document.getElementById("postDiv2").appendChild(x);
+textIn.value='';
 })
 
-
+/*
 const x = document.createElement('div');
-x.id="newPost2";
-
+x.classList.add("newPost2");
+x.appendChild(pid);
+x.appendChild(secId);
+//document.querySelector(".newPost2").appendChild(pid);
+//document.querySelector(".newPost2").appendChild(secId);
 const t = document.getElementById("postDiv2").appendChild(x);
+*/
 
 
-document.getElementById("newPost2").appendChild(pid);
-document.getElementById("newPost2").appendChild(secId);
 
 //console.log(t);
 
