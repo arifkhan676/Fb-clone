@@ -26,24 +26,50 @@ document.getElementById("postDiv2").appendChild(x);
 textIn.value='';
 })
 
+
+   var fileInput = document.getElementById("myInputId");
+   var uploadimg = "";
+   fileInput.addEventListener("change",function(){
+      const reader = new FileReader();
+      reader.addEventListener("load",()=>{
+      uploadimg=reader.value;
+      document.getElementById("pd").style.backgroundImage= `url(${uploadimg})`;
+      });
+    reader.readAsDataURL(this.files[0]);
+       
+   })
+
+   function popUp(){
+      return ;
+   }
+
+
+
+ //  addEventLister learning***
+
+
+
+
 /*
-const x = document.createElement('div');
-x.classList.add("newPost2");
-x.appendChild(pid);
-x.appendChild(secId);
-//document.querySelector(".newPost2").appendChild(pid);
-//document.querySelector(".newPost2").appendChild(secId);
-const t = document.getElementById("postDiv2").appendChild(x);
-*/
+function uploadFile(){
+
+
+}
+
+           <button class="btn-pro" onclick="uploadFile()"> <i class="fa-solid fa-image"></i>  </button> 
 
 
 
-//console.log(t);
-
-//console.log(t);
-
-/*
-
-
+ var file = fileInput.files[0]; //koto gula pic nicchi array te insert hibe
+   var formData = new FormData();  //FormData oi pic or value gulo pair akare represnt korbe & XMLHttpRequest() diye 
+   formData.append("file",file); // file append kortese
+   var xhr = new XMLHttpRequest(); // XMLHttpRequest() diye data retrieve korbe URL diye page theke
+   xhr.open("POST","upload.php",true); //pic nicche r boolean diye test krtese
+   xhr.onreadystatechange = function(){
+      if(xhr.readyState === 4 && xhr.status === 200 ){
+         console.log(xhr.responseText);
+      }
+   };
+   xhr.send(formData);
 
 */
