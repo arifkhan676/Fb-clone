@@ -16,6 +16,7 @@ bt.addEventListener('click',() => {
    pid.classList.add("pId");
    dateid.classList.add("dateId");
 
+
    pid.textContent=textIn.value;
    dateid.innerHTML=new Date().toLocaleTimeString();
 
@@ -27,34 +28,43 @@ textIn.value='';
 })
 
 
-   var fileInput = document.getElementById("myInputId");
-   var uploadimg = "";
-   fileInput.addEventListener("change",function(){
-      const reader = new FileReader();
-      reader.addEventListener("load",()=>{
-      uploadimg=reader.value;
-      document.getElementById("pd").style.backgroundImage= `url(${uploadimg})`;
-      });
-    reader.readAsDataURL(this.files[0]);
-       
-   })
 
-   function popUp(){
-      return ;
-   }
-
-
-
- //  addEventLister learning***
-
-
-
-
-/*
-function uploadFile(){
-
-
+function gotoInput(){
+   const input = document.createElement('input');
+   input.type="file";
+   input.id="myInputId";
+   input.accept="image/png, image/jpg ,image/jpeg";
+   document.getElementById("postDiv1").appendChild(input);
 }
+
+var takePic = document.getElementById("profile-pic");
+var fileInput = document.getElementById("myInputId");
+fileInput.onchange=function (){
+takePic.src = URL.createObjectURL(fileInput.files[0]);
+}
+
+
+
+/* addEventLister learning***
+
+
+   const img = document.createElement('img');
+   img.classList.add('postImg');
+   img.id="profile-pic"
+   img.src = "images/profile.png";
+   
+   var takePic = document.getElementById("profile-pic");
+   var fileInput = document.getElementById("myInputId");
+   fileInput.onchange=function (){
+   takePic.src = URL.createObjectURL(fileInput.files[0]);
+ }
+
+
+
+              <img class="xImg" src="images/profile.png" width="300px" height="300px" id="profile-pic"  alt="">
+              <input  type="file" id="myInputId"  accept="image/png, image/jpg ,image/jpeg">
+
+
 
            <button class="btn-pro" onclick="uploadFile()"> <i class="fa-solid fa-image"></i>  </button> 
 
