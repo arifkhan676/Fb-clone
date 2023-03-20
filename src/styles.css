@@ -12,6 +12,10 @@ body{
 .navbar-brand:hover{
     color:#fff;
 }
+.post{
+    position: relative;
+    top: 7%;
+}
 p{
     color: #fff;
 }
@@ -46,13 +50,19 @@ h5{
     padding-top: 10px;
     border-radius: 15px;
 }
+
 #myInputId{
-   text-align: center;
    position: relative;
    left: 30%;
 }
-
-
+.postImg{
+  position: relative;
+  left: 15%;
+  
+}
+#pd{
+    margin-top: 5%;
+}
 .newPost2{
     background-color: #2a2b2cd0;
     margin-top: 50px;

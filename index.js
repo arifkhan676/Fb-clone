@@ -26,22 +26,43 @@ bt.addEventListener('click',() => {
 document.getElementById("postDiv2").appendChild(x);
 textIn.value='';
 })
-
-
-
 function gotoInput(){
    const input = document.createElement('input');
    input.type="file";
    input.id="myInputId";
    input.accept="image/png, image/jpg ,image/jpeg";
    document.getElementById("postDiv1").appendChild(input);
+
+   const img = document.createElement('img');
+   img.classList.add('postImg');
+   img.id="profile-pic"
+   img.src = "images/profile.png";
+   img.width=300;
+   img.height=300;
+   document.getElementById("pd").appendChild(img);
+
+   var takePic = document.getElementById("profile-pic");
+   var fileInput = document.getElementById("myInputId");
+   fileInput.onchange=function (){
+   takePic.src = URL.createObjectURL(fileInput.files[0]);
+}
 }
 
-var takePic = document.getElementById("profile-pic");
-var fileInput = document.getElementById("myInputId");
-fileInput.onchange=function (){
-takePic.src = URL.createObjectURL(fileInput.files[0]);
-}
+
+
+
+
+
+/*
+function gotoInput(){
+   const input = document.createElement('input');
+   input.type="file";
+   input.id="myInputId";
+   input.accept="image/png, image/jpg ,image/jpeg";
+   document.getElementById("postDiv1").appendChild(input);
+} */
+
+
 
 
 
