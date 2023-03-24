@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="src/styles.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Days+One&display=swap" rel="stylesheet">   
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
    
@@ -27,16 +27,40 @@
               <i class="fa-solid fa-bell"></i>
             </div>
           <div class="dropdown">
-            <img class="myImg1"  src="https://scontent.fdac135-1.fna.fbcdn.net/v/t39.30808-6/333064775_569180981619397_3510004848465821387_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=Xvi6X-lk9ZYAX-ADWeL&_nc_ht=scontent.fdac135-1.fna&oh=00_AfD3G7Jz3qYPBlr9Oh7DKjqCgJtmMtdoWosgw02W84P7cQ&oe=6421C5C1" alt="">         
+
+            <button class="dropdown-btn"> 
+              <img class="myImg1"  src="https://scontent.fdac135-1.fna.fbcdn.net/v/t39.30808-6/333064775_569180981619397_3510004848465821387_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=Xvi6X-lk9ZYAX-ADWeL&_nc_ht=scontent.fdac135-1.fna&oh=00_AfD3G7Jz3qYPBlr9Oh7DKjqCgJtmMtdoWosgw02W84P7cQ&oe=6421C5C1" alt="">         
+            </button>
            <div class="dropdown-content">
-                  <a class="dropdown-item"  href="#">Link 1</a>
-                  <a class="dropdown-item" href="#">Link 2</a>
-                  <a class="dropdown-item" href="#">Link 3</a>
-                 </div>
-           </div>
+              <div class="div1" >
+               <div class="equal">
+                 <img class="myImg1" src="https://scontent.fdac135-1.fna.fbcdn.net/v/t39.30808-6/333064775_569180981619397_3510004848465821387_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=Xvi6X-lk9ZYAX-ADWeL&_nc_ht=scontent.fdac135-1.fna&oh=00_AfD3G7Jz3qYPBlr9Oh7DKjqCgJtmMtdoWosgw02W84P7cQ&oe=6421C5C1" alt="">
+                     +  <a href=""> <h5>Ariful Hasan</h5>   </a>
+                   </div>
+                  </div>
+                  <a class="seeProfile" href=""> See Profile</a>
+
+                </div>
+            </div>
           </div>
 </nav>
-
+<script>
+  /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+  var dropdown = document.getElementsByClassName("dropdown-btn");
+  var i;
+  
+  for (i = 0; i < dropdown.length; i++) {
+    dropdown[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var dropdownContent = this.nextElementSibling;
+      if (dropdownContent.style.display === "block") {
+        dropdownContent.style.display = "none";
+      } else {
+        dropdownContent.style.display = "block";
+      }
+    });
+  }
+  </script>
 
     <section class="rb" >
         <div class="container-fluid">

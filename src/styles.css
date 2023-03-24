@@ -198,22 +198,56 @@ h5{
 }
 /* dropdown */
 
+.active{
+    background-color: #282424;
+    color: #fff;
+}
+
 .dropdown{
     position: relative;
     display: inline-block;
-}
-.dropdown-content{
-   position: absolute;
-   top: 50px;
-   right: 10px;
-   width: 250px;
-   height: 300px;
-   background-color: aliceblue;
- }
-.dropdown:hover .dropdown-content{
+} 
+.dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #818181;
     display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+  }
+.dropdown-content{ 
+   display: none;
+   position: absolute;
+   top: 57px;
+   right: 10px;
+   width: 350px;
+   height: 400px;
+   background-color:#242526;
+   box-shadow: 0px 8px 16px 0px rgba(20, 20, 20, 0.81);
 }
-
+.dropdown-content .div1{
+    position: relative;
+    margin-top: 10px;
+    border-bottom: 1px solid gray;
+    width: 80%;
+    padding-bottom: 20px;
+    left: 20px;
+}
+ .dropdown-content .equal{
+    position: relative;
+    top: 20px;
+    padding-bottom: 10px;
+}
+.seeProfile{
+    position: relative;
+    top: 10px;
+    left: 20px;
+}
   /* popup 
 
   .popup{
