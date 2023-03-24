@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="src/styles.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Days+One&display=swap" rel="stylesheet">   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
 
+    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
    
     <link rel="stylesheet" href="fontawesome-free-6.3.0-web\css\all.min.css">
@@ -24,9 +26,24 @@
             <div class="iconsNav ml-auto">
               <i class="fa-brands fa-facebook-messenger"></i>   
               <i class="fa-solid fa-bell"></i>
-              <img class="myImg1" src="https://scontent.fdac135-1.fna.fbcdn.net/v/t39.30808-6/333064775_569180981619397_3510004848465821387_n.jpg?stp=dst-jpg_p843x403&_nc_cat=107&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=AM1Ti7u07gwAX-Og3rz&_nc_ht=scontent.fdac135-1.fna&oh=00_AfB54RlKA5--VMNtN6O4N8x5HK9QX09i_L-0sFJqLHAVXw&oe=6413EE01" alt="">
             </div>
+
+          <div class="dropdown">
+            <img class="myImg1" onClick="openPopup()"  href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" src="https://scontent.fdac135-1.fna.fbcdn.net/v/t39.30808-6/333064775_569180981619397_3510004848465821387_n.jpg?stp=dst-jpg_p843x403&_nc_cat=107&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=AM1Ti7u07gwAX-Og3rz&_nc_ht=scontent.fdac135-1.fna&oh=00_AfB54RlKA5--VMNtN6O4N8x5HK9QX09i_L-0sFJqLHAVXw&oe=6413EE01" alt="">
+                <div class="dropdown-content">
+                  <a class="dropdown-item"    href="#">Link 1</a>
+                  <a class="dropdown-item" href="#">Link 2</a>
+                  <a class="dropdown-item" href="#">Link 3</a>
+                </div>
+            </div>     
 </nav>
+<div class="popup" id="popup" >
+  <img src="images/tick.png" alt="">
+   <h2>Thank You!</h2>
+   <p>Your information has successfully submitted!</p>
+   <button type="submit"  class="btn btn-outline-dark" onClick="closePopup()">Ok</button> 
+ </div>
+</div>
 
     <section class="rb" >
         <div class="container-fluid">
