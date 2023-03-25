@@ -1,6 +1,7 @@
 body{
     padding: 0px;
     margin: 0px;
+    color: #fff;
 }
 .navbar{
     background-color: #242526;
@@ -222,8 +223,8 @@ h5{
 .dropdown-content{ 
    display: none;
    position: absolute;
-   top: 57px;
-   right: 10px;
+   top: 58px;
+   right: 1px;
    width: 350px;
    height: 400px;
    background-color:#242526;
@@ -247,3 +248,5 @@ h5{
     top: 10px;
     left: 30px;
 }
+/* messenger chat */
+
