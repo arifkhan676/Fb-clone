@@ -23,94 +23,71 @@
           <input class="head-search" type="search" placeholder="Search Facebook" aria-label="Search">          
 
   <div class="iconsNav ml-auto">
-  
-   <div class="dropdown">
-      <button class="dropdown-btn">
-      <i class="fa-brands fa-facebook-messenger"></i>   
-      </button>
    
-      <div class="dropdown-content">
-        <div class="chat-box">
-         <form action="chat.html">
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropdown-btn"> <i class="fa-brands fa-facebook-messenger"></i>  </button>
+        <div id="myDropdown" class="dropdown-content">
+          <div class="chat-box">
+            <form action="chat.html">
               <input type="text"
               name="username" 
               id="username"
               placeholder="Username"
               >
-       
-              <label for="room">Room</label>
               <select name="room" id="room">
                <option value="JavaScript">JavaScript</option>
                <option value="JavaScript">PHP</option>
               </select>
-             <button type="submit" class="btn btn-light">Join Chat</button>
-
+             <button type="submit"  class="btn btn-light">Join Chat</button>
           </form>
-
-        </div>
-
-     </div>
-   </div>
-
-   <i class="fa-solid fa-bell"></i>
- </div>
-
-          <div class="dropdown">
-            <button class="dropdown-btn"> 
-              <img class="myImg1"  src="https://scontent.fdac135-1.fna.fbcdn.net/v/t39.30808-6/333064775_569180981619397_3510004848465821387_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=Xvi6X-lk9ZYAX-ADWeL&_nc_ht=scontent.fdac135-1.fna&oh=00_AfD3G7Jz3qYPBlr9Oh7DKjqCgJtmMtdoWosgw02W84P7cQ&oe=6421C5C1" alt="">         
-            </button>
-           <div class="dropdown-content">
-              <div class="div1" >
-               <div class="equal">
-                 <img class="myImg1" src="https://scontent.fdac135-1.fna.fbcdn.net/v/t39.30808-6/333064775_569180981619397_3510004848465821387_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=Xvi6X-lk9ZYAX-ADWeL&_nc_ht=scontent.fdac135-1.fna&oh=00_AfD3G7Jz3qYPBlr9Oh7DKjqCgJtmMtdoWosgw02W84P7cQ&oe=6421C5C1" alt="">
-                       <a href=""> <h5>Ariful Hasan</h5>   </a>
-                   </div>
-                  </div>
-                  <a class="seeProfile" href="chat.html"> See Profile</a>
-                  <div class="div1" >
-                    <div class="equal">
-                      <i class="fa-solid fa-user-group"></i>
-                      <a href=""> <h5>Friends</h5> </a>
-                        </div>
-                       <div class="equal">
-            <i class="fa-solid fa-floppy-disk"></i>
-          <a href=""> <h5>Most Recent</h5> </a>
           </div>
-          <div class="equal">
-            <i class="fa-solid fa-user-group"></i>
-            <a href=""> <h5>Saved</h5> </a>
-          </div>
-          <div class="equal">
-            <i class="fa-solid fa-floppy-disk"></i>
-            <a href=""> <h5>Groups</h5> </a>
-          </div>
-                       </div>
-                       
-                     </div>
-                 </div>
-                </div>
-                
+             </div>
             </div>
+
+         </div>
+
+     <i class="fa-solid fa-bell"></i>
+    </div>
+
+    
+         <div class="dropdown">
+               <button onclick="myFunctionPro()" class="dropdown-btn"> 
+                <img class="myImg1"  src="https://scontent.fdac135-1.fna.fbcdn.net/v/t39.30808-6/333064775_569180981619397_3510004848465821387_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=Xvi6X-lk9ZYAX-ADWeL&_nc_ht=scontent.fdac135-1.fna&oh=00_AfD3G7Jz3qYPBlr9Oh7DKjqCgJtmMtdoWosgw02W84P7cQ&oe=6421C5C1" alt="">         
+              </button>
+               <div id="myDropdownPro" class="dropdown-content">
+                    <div class="div1" >
+                       <div class="equal">
+                          <img class="myImg1" src="https://scontent.fdac135-1.fna.fbcdn.net/v/t39.30808-6/333064775_569180981619397_3510004848465821387_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=Xvi6X-lk9ZYAX-ADWeL&_nc_ht=scontent.fdac135-1.fna&oh=00_AfD3G7Jz3qYPBlr9Oh7DKjqCgJtmMtdoWosgw02W84P7cQ&oe=6421C5C1" alt="">
+                          <a href=""> <h5>Ariful Hasan</h5>   </a>
+                      </div>
+                    </div>
+                    <a class="seeProfile" href="chat.html"> See Profile</a>
+                  
+                    <div class="div1" >
+                      <div class="equal">
+                        <i class="fa-solid fa-user-group"></i>
+                        <a href=""> <h5>Friends</h5> </a>
+                          </div>
+                         <div class="equal">
+                              <i class="fa-solid fa-floppy-disk"></i>
+                            <a href=""> <h5>Most Recent</h5> </a>
+                            </div>
+                            <div class="equal">
+                              <i class="fa-solid fa-user-group"></i>
+                              <a href=""> <h5>Saved</h5> </a>
+                            </div>
+                            <div class="equal">
+                              <i class="fa-solid fa-floppy-disk"></i>
+                              <a href=""> <h5>Groups</h5> </a>
+                            </div>
+                     </div>
+               </div>
           </div>
+
+    
+ 
 </nav>
-<script>
-  /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
-  var dropdown = document.getElementsByClassName("dropdown-btn");
-  var i;
-  
-  for (i = 0; i < dropdown.length; i++) {
-    dropdown[i].addEventListener("click", function() {
-      //this.classList.toggle("active");
-      var dropdownContent = this.nextElementSibling;
-      if (dropdownContent.style.display === "block") {
-        dropdownContent.style.display = "none";
-      } else {
-        dropdownContent.style.display = "block";
-        
-      }
-    });
-  }
-  </script>
+
 
     <section class="rb" >
         <div class="container-fluid">

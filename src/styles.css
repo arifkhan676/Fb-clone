@@ -208,7 +208,7 @@ h5{
     display: inline-block;
 } 
 .dropdown-btn {
-    padding: 6px 8px 6px 16px;
+    padding: 8px 10px 8px 18px;
     text-decoration: none;
     font-size: 15px;
     color: #818181;
@@ -216,19 +216,23 @@ h5{
     border: none;
     background: none;
     width: 100%;
-    text-align: left;
     cursor: pointer;
     outline: none;
   }
-.dropdown-content{ 
-   display: none;
-   position: absolute;
-   top: 58px;
-   right: 1px;
-   width: 350px;
-   height: 400px;
-   background-color:#242526;
-   box-shadow: 0px 8px 16px 0px rgba(20, 20, 20, 0.81);
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #1c1e21;
+    width: 350px;
+    height: 400px;
+    right: 1px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+.show{
+    display: block;
 }
 .dropdown-content .div1{
     position: relative;
@@ -249,4 +253,19 @@ h5{
     left: 30px;
 }
 /* messenger chat */
+.chat-box{
+    width: 200px;
+    height: 200px;
+    display: grid;
+    padding: 25%;
+}
+.labRoom{
+    color: #fff;
 
+}
+.chat-box .btn{
+    margin-top: 30px;
+}
+#room{
+    margin-top: 20px;
+}
